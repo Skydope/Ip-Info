@@ -30,7 +30,7 @@ let selectedLanguage = $select.value // Inicializa con el valor actual del <sele
 
 const loadPublicIp = async () => {
     try {
-        const response = await fetch(`http://ip-api.com/json/?lang=${selectedLanguage}`);
+        const response = await fetch(`https://ip-api.com/json/?lang=${selectedLanguage}`);
         const data = await response.json(); 
         const publicIP = data.query; 
         console.log('Public IP:', publicIP);
@@ -82,7 +82,7 @@ const handleLanguageChange = async () => {
 // Función para obtener información de IP
 const fetchIpInfo = async (ip) => {
     try {
-        const response = await fetch(`http://ip-api.com/json/${ip}?lang=${selectedLanguage}`, OPTIONS)
+        const response = await fetch(`https://ip-api.com/json/${ip}?lang=${selectedLanguage}`, OPTIONS)
         const data = await response.json()
         return data
     } catch (error) {
