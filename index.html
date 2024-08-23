@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IP Info 🔎</title>
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+ 
+  <nav>
+    <a id="reloadLink" href="#">
+        <img src="./assets/ipnfo-logo.png" alt="Logo">
+    </a>
+    
+    <div>
+        <label class="langLabel" id="langLabel" for="language-select">Idioma:</label>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="de">Deutsch (German)</option>
+            <option value="es" selected>Español (Spanish)</option>
+            <option value="pt-BR">Português (Portuguese)</option>
+            <option value="fr">Français (French)</option>
+            <option value="ja">日本語 (Japanese)</option>
+            <option value="zh-CN">中国 (Chinese)</option>
+            <option value="ru">Русский (Russian)</option>
+        </select>
+    </div>
+</nav>
+
+  <main class="container">
+    <form id="form">
+      <label id="ipLabel">
+        IP del usuario
+        <input class="inputIp" required id="inputIp" type="text" placeholder="Introduce aquí la IP">
+        <small id="example">Por ejemplo: 54.85.132.205</small>
+      </label>
+
+      <button class="btn" type="submit" id="submit">
+        Buscar información de esta IP
+      </button>
+
+    </form>
+    <form id="publicIpForm">
+      <button class="btn" id="submitPublicIp" type="submit">Buscar mi propia IP</button>
+    </form>
+    <div>
+      <pre id="results"></pre>
+    </div>
+  </main>
+
+  <footer>
+    <p>Created By</p>
+    <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/in/augusto-natiello/">Skydope</a>
+  </footer>
+
+</body>
+
+</html>

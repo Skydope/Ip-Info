@@ -1,0 +1,113 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a img {
+    height: 200px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav label {
+    color: #fff;
+}
+
+nav select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+option{
+    cursor: pointer;
+}
+
+#form, #publicIpForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form input, label, small, button{
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;  /* Centrado vertical */
+    justify-content: center;  /* Centrado horizontal */
+    text-align: center;  /* Asegura que el texto esté centrado */
+}
+
+.inputIp{
+    border: 2px solid #1ED760;
+}
+
+.btn{
+   
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    color: #202632;
+    background-color: #1ED760;
+    height: 48px;
+    &:hover{
+        transform: scale(1.02);
+        background-color: #202632;
+        color: #1ED760;
+        border-color: #1ED760;
+    }
+
+}
+
+
+small,label{
+    padding: 5px;
+}
+
+footer a{
+    color: #1ED760;
+    text-decoration: none;
+    &:hover{
+        color: whitesmoke;
+    }
+}
+
+footer p{
+    color: rgba(245, 245, 245, 0.322);
+}
+
+footer{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.langLabel{
+    color: #c2c7d0;
+}
+
+@media only screen and (max-width: 767px) {
+    nav{
+        flex-direction: column;
+    }
+}
